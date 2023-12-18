@@ -1,7 +1,5 @@
 <script>
 import { ref } from "vue";
-import passwordOffIcon from "@/assets/icons/toggle-password-off-icon.svg";
-import passwordOnIcon from "@/assets/icons/toggle-password-on-icon.svg";
 
 export default {
   props: {
@@ -45,11 +43,10 @@ textarea {
   padding: 22px 58px 22px 28px;
   border-radius: 36px;
   border: none;
-  transition: all 0.2s;
+  transition: $transition-base;
   border: 2px solid transparent;
   min-height: 15.2rem;
   resize: none;
-
 
   &:focus {
     outline: none;

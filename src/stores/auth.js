@@ -63,20 +63,6 @@ export const useAuthStore = defineStore("auth", {
       }
     },
 
-    async refreshTokenSend() {
-      try {
-        const { data } = await apiClient.post("/auth", {
-          refresh: localStorage.getItem("refreshToken"),
-        });
-
-        this.authTokens = {
-          tokens: data,
-        };
-
-        return data;
-      } catch (error) {
-        return await Promise.reject(error);
-      }
-    },
+    // async refreshTokenSend() {},
   },
 });

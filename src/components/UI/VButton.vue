@@ -49,7 +49,7 @@ button {
   font-size: 1.25rem;
   font-weight: 500;
   padding: 0.75rem 1.5rem;
-  transition: all 0.2s;
+  transition: $transition-base;
   background: $green-light;
   color: $white;
   display: flex;

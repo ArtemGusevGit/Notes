@@ -64,7 +64,7 @@ input {
   padding: 22px 58px 22px 28px;
   border-radius: 36px;
   border: none;
-  transition: all 0.2s;
+  transition: $transition-base;
   border: 2px solid transparent;
 
   &:focus {

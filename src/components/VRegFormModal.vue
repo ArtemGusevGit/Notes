@@ -157,7 +157,7 @@ export default {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   display: table;
-  transition: opacity 0.3s ease;
+  transition: $transition-base;
 }
 
 .modal-wrapper {
@@ -174,7 +174,7 @@ export default {
   background-color: $dark-light;
   border-radius: 2px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
-  transition: all 0.3s ease;
+  transition: $transition-base;
 
   @include media-breakpoint-down(xxl) {
     max-width: 37rem;

@@ -27,7 +27,7 @@ a {
   cursor: pointer;
   color: $green-light;
   font-weight: 700;
-  transition: all 0.2s;
+  transition: $transition-base;
 
   &:hover {
     color: $white;

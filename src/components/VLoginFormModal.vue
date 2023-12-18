@@ -138,7 +138,7 @@ export default {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   display: table;
-  transition: opacity 0.3s ease;
+  transition: $transition-base;
 }
 
 .modal-wrapper {
