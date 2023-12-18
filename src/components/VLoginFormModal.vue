@@ -43,8 +43,6 @@ export default {
       } catch (error) {
         errors.value = error.response.data.message;
       } finally {
-        email.value = ""
-        password.value = ""
         isLoading.value = false;
       }
     };
