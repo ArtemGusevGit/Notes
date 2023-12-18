@@ -12,6 +12,7 @@ import * as rules from "vee-validate/dist/rules";
 import "@/assets/styles/main.scss";
 import { createPinia } from "pinia";
 
+const pinia = createPinia();
 
 Object.keys(rules).forEach((rule) => {
   extend(rule, rules[rule]);
@@ -19,7 +20,6 @@ Object.keys(rules).forEach((rule) => {
 
 localize("ru", ru);
 
-const pinia = createPinia();
 Vue.component("ValidationObserver", ValidationObserver);
 Vue.component("ValidationProvider", ValidationProvider);
 Vue.config.productionTip = false;
