@@ -47,6 +47,7 @@ textarea {
   border: 2px solid transparent;
   min-height: 15.2rem;
   resize: none;
+  width: 100%;
 
   &:focus {
     outline: none;
