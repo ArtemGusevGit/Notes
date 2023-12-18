@@ -90,7 +90,6 @@ export default {
   align-items: center;
   padding: 2.5rem 0;
   gap: 1rem;
-  min-width: 20rem;
 }
 
 .user-info {

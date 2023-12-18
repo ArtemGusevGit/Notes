@@ -66,6 +66,7 @@ input {
   border: none;
   transition: $transition-base;
   border: 2px solid transparent;
+  width: 100%;
 
   &:focus {
     outline: none;
