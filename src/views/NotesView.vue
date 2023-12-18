@@ -73,6 +73,10 @@ export default {
   }
 }
 
+.note {
+  box-shadow: 0px 15px 15px -10px rgba(0, 0, 0, 0.40);
+}
+
 .note-title {
   position: relative;
   padding: 1.25rem 3.5rem 1.25rem 1.75rem;

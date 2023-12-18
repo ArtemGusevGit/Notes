@@ -31,6 +31,7 @@ export default {
     };
 
     const goToMainPage = () => {
+      showTooltip.value = false;
       if (router.currentRoute.name !== "HomeView") {
         router.push({ name: "HomeView" });
       }
