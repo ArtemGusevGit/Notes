@@ -36,6 +36,12 @@ export default {
       }
     };
 
+    const goToNotes = () => {
+      if (router.currentRoute.name !== "NotesView") {
+        router.push({ name: "NotesView" });
+      }
+    };
+
     return {
       showLoginModal,
       userIcon,
@@ -44,6 +50,8 @@ export default {
       userData,
       isUserAuthenticated,
       goToMainPage,
+      goToNotes,
+      router,
     };
   },
 };
@@ -68,6 +76,12 @@ export default {
       <img :src="userIcon" alt="userIcon" />
 
       <div v-if="showTooltip" class="tooltip">
+        <VLink
+          v-if="router.currentRoute.name !== 'NotesView'"
+          @click="goToNotes"
+        >
+          Мои заметки
+        </VLink>
         <VLink @click="logOut">Выйти</VLink>
       </div>
     </div>
@@ -116,6 +130,9 @@ export default {
   padding: 2.5rem;
   box-shadow: 0px 15px 46px -10px rgba(0, 0, 0, 0.6);
   border-radius: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 
   &::after {
     content: "";
