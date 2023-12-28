@@ -74,7 +74,7 @@ export default {
 }
 
 .note {
-  box-shadow: 0px 15px 15px -10px rgba(0, 0, 0, 0.40);
+  box-shadow: 0px 15px 15px -10px rgba(0, 0, 0, 0.4);
 }
 
 .note-title {
