@@ -4,7 +4,7 @@ import { createVuePlugin as vue2 } from "vite-plugin-vue2";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/Notes/',
+  base: '/NotesApp/',
   plugins: [
     vue2({
       jsx: true,
